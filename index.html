@@ -25,10 +25,46 @@
         font-size: 48px;
         text-shadow: 0 0 20px #7f8cff;
       }
+
+      .tools {
+        margin-top: 48px;
+      }
+
+      .tool-button {
+        display: inline-block;
+        padding: 14px 28px;
+        border: 1px solid #7f8cff;
+        border-radius: 999px;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        background: rgba(127, 140, 255, 0.15);
+        box-shadow: 0 0 18px rgba(127, 140, 255, 0.35);
+        transition: background 0.2s, box-shadow 0.2s;
+      }
+
+      .tool-button:hover,
+      .tool-button:focus-visible {
+        background: rgba(127, 140, 255, 0.35);
+        box-shadow: 0 0 28px rgba(127, 140, 255, 0.6);
+        outline: none;
+      }
+
+      .tool-note {
+        font-size: 14px;
+        opacity: 0.75;
+      }
     </style>
   </head>
   <body>
     <h1>Hello, I'm Space Cowboy!</h1>
     <p>This is my very first web page.</p>
+
+    <div class="tools">
+      <a class="tool-button" href="https://claude.ai/artifact/BkgTNkwx46jJHmrVtAe8bb" target="_blank" rel="noopener">
+        Interview Guide Builder
+      </a>
+      <p class="tool-note">Company and job title in, Word interview guide out.</p>
+    </div>
   </body>
 </html>
